@@ -3,94 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pregap — Support</title>
-<meta name="description" content="Support for Pregap, a modern audio CD burner for the Mac.">
+<title>Pregap</title>
+<meta name="description" content="Pregap — the audio CD burner your Mac should have shipped with. Gapless disc-at-once burns and CD-Text for CDJs, car stereos and hi-fi.">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="wrap">
+<body class="home">
+<main class="wrap">
 
-<header>
-    <img src="icon.png" alt="Pregap app icon">
+<section class="hero">
+    <img src="icon.png" alt="" width="72" height="72">
     <h1>Pregap</h1>
-    <p class="tagline">A modern, native audio CD burner for the Mac.</p>
-</header>
+    <p class="lede">The audio CD burner your Mac should have shipped with.</p>
+    <p class="where">For the CDJs in the booth, the stereo in the car,<br>
+    the hi-fi at home, and the disc you hand to someone.</p>
+</section>
 
-<p>Pregap burns Red Book audio CDs from whatever you already have. It decodes FLAC,
-ALAC, WAV, AIFF, MP3, AAC and more on the fly, writes CD-Text so your car stereo
-shows track names, and burns disc-at-once so gapless albums stay gapless.</p>
+<section class="points">
+    <div>
+        <h2>Gapless, properly.</h2>
+        <p>Disc-at-once, with every gap under your control down to zero. Mixes and
+        live albums play straight through.</p>
+    </div>
+    <div>
+        <h2>Names on the display.</h2>
+        <p>CD-Text written during the burn, so CDJs, head units and hi-fi players that
+        read it show the artist and track.</p>
+    </div>
+    <div>
+        <h2>Any file in.</h2>
+        <p>FLAC, ALAC, WAV, AIFF, MP3, AAC — converted to CD audio on the fly. Your
+        originals are never touched.</p>
+    </div>
+</section>
 
-<h2>Get help</h2>
-<div class="card">
-    <p><strong>Email:</strong> <a href="mailto:support@pregap.app">support@pregap.app</a></p>
-    <p class="meta">Replies usually within a few days. Please include your macOS version,
-    the make and model of your burner, and — if a burn failed — what the app said.</p>
-</div>
-
-<h2>Requirements</h2>
-<ul>
-    <li>macOS 14 or later.</li>
-    <li>A CD burner: an internal SuperDrive, an Apple USB SuperDrive, or any
-        standard USB optical drive macOS recognises.</li>
-    <li>Blank CD-R or CD-RW media. CD-RW discs can be erased and reused.</li>
-</ul>
-
-<h2>Common questions</h2>
-
-<h3>The app says no drive is connected.</h3>
-<p>Pregap burns to real optical hardware, so a drive has to be attached before it can
-do anything. Plug in the burner, give macOS a few seconds to see it, and the drive
-appears in the burn bar. Bus-powered USB drives sometimes need a powered hub or a
-direct port rather than a keyboard or monitor hub.</p>
-
-<h3>Which file formats can I add?</h3>
-<p>Whatever your copy of macOS can decode — FLAC, ALAC, WAV, AIFF, MP3, AAC, Opus,
-Ogg, CAF and more. Anything that is not already 44.1 kHz 16-bit stereo is converted
-on the fly, with mastering-quality sample rate conversion and dither. Your original
-files are never modified.</p>
-
-<h3>A file was added but shows as failed.</h3>
-<p>Being a supported <em>format</em> is not a guarantee that a particular
-<em>file</em> will open. DRM-protected purchases (Audible <code>.aax</code>,
-protected <code>.m4p</code>) and truncated or corrupt downloads cannot be decoded.
-The row is flagged with the reason and the burn is blocked until you remove or
-replace that track — deliberately, so a bad file can never become a half-written
-disc.</p>
-
-<h3>What is a pregap, and why do I care?</h3>
-<p>A pregap is the run-up before a track's actual start point — the part old CD
-players count down through as negative time. Track 1's is mandatory and at least two
-seconds. Every other one is optional, and controlling it is the difference between a
-live album that flows and one with two seconds of silence dropped into the middle.
-Pregap burns disc-at-once and defaults every gap to zero; you can change the default
-or override any single track.</p>
-
-<h3>CD-Text does not show up on my player.</h3>
-<p>CD-Text is written into the lead-in during the burn, and not every player reads
-it. Car head units commonly do; many computers and older players do not. If your
-player supports it and the disc still shows nothing, check that the CD-Text fields
-were filled in before the burn — they cannot be added to a finished disc.</p>
-
-<h3>Can it burn data discs, MP3 CDs, or DVDs?</h3>
-<p>No. Pregap burns audio CDs and does that one thing properly. Use Finder's built-in
-disc burning for data discs.</p>
-
-<h3>The disc is blank but the app says it is not.</h3>
-<p>Some drives need a moment after a disc is inserted, or after a previous burn,
-before they report media status correctly. Eject, reseat the disc, and wait a few
-seconds. A CD-RW that already holds a session can be erased from the burn bar.</p>
-
-<h3>Does Pregap need the internet?</h3>
-<p>No. It has no network access at all — no track lookup, no cover art, no analytics.
-See the <a href="privacy.html">privacy policy</a>.</p>
+<p class="soon">Coming to the Mac App Store.</p>
 
 <footer>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="mailto:support@pregap.app">Support</a>
-    <div style="margin-top:12px">© 2026 awfuldave</div>
+    <a href="help.html">Help</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="mailto:support@pregap.app">support@pregap.app</a>
+    <span>© 2026 awfuldave</span>
 </footer>
 
-</div>
+</main>
 </body>
 </html>
