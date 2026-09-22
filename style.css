@@ -1,4 +1,4 @@
-/* Pregap site — dark, neutral, one accent (burn amber), per BRANDING.md. */
+/* Pregap site: dark, neutral, one accent (burn amber), per BRANDING.md. */
 :root {
     --bg: #101013;
     --panel: #17171c;
@@ -51,7 +51,7 @@ footer {
 }
 footer a { margin-right: 18px; }
 
-/* Menu — one line, on every page. */
+/* Menu: one line, on every page. */
 .nav {
     max-width: 680px; margin: 0 auto; padding: 22px 0;
     display: flex; align-items: center; justify-content: space-between;
@@ -64,7 +64,7 @@ footer a { margin-right: 18px; }
 .home .nav { max-width: 760px; border-bottom: 0; }
 .home .nav .brand { visibility: hidden; }   /* the page is the wordmark */
 
-/* Home — stark: the name, one line, three points. */
+/* Home, stark: the name, one line, three points. */
 body.home { padding-bottom: 64px; }
 .home .wrap { max-width: 760px; }
 .hero { padding: 12vh 0 56px; }
