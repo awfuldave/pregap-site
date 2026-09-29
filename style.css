@@ -54,7 +54,7 @@ footer a { margin-right: 18px; }
 /* Menu: one line, on every page. */
 .nav {
     max-width: 680px; margin: 0 auto; padding: 22px 0;
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between;
     font-size: 15px; border-bottom: 1px solid var(--line);
 }
 .nav a { color: var(--muted); text-decoration: none; }
@@ -62,7 +62,8 @@ footer a { margin-right: 18px; }
 .nav .brand { color: var(--text); font-weight: 600; letter-spacing: -0.01em; }
 .nav div { display: flex; gap: 22px; }
 .home .nav { max-width: 760px; border-bottom: 0; }
-.home .nav .brand { visibility: hidden; }   /* the page is the wordmark */
+.home .nav .brand { display: none; }   /* the page is the wordmark */
+.home .nav div { margin-left: auto; }
 
 /* Home, stark: the name, one line, three points. */
 body.home { padding-bottom: 64px; }
@@ -90,4 +91,5 @@ body.home { padding-bottom: 64px; }
     .hero img { width: 128px; height: 128px; border-radius: 28px; }
     header img { width: 112px; height: 112px; border-radius: 24px; }
     .points { grid-template-columns: 1fr; gap: 22px; }
+    .nav div { gap: 6px 16px; flex-wrap: wrap; }
 }

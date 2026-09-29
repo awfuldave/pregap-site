@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why your burned CD has gaps between tracks</title>
+<meta name="description" content="Burned an album or mix to CD and heard silence between tracks? The four usual causes, from track-at-once burning to encoder padding, and how to fix each one.">
+<link rel="canonical" href="https://pregap.app/gaps-between-tracks.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pregap">
+<meta property="og:url" content="https://pregap.app/gaps-between-tracks.html">
+<meta property="og:title" content="Why your burned CD has gaps between tracks">
+<meta property="og:description" content="Burned an album or mix to CD and heard silence between tracks? The four usual causes, from track-at-once burning to encoder padding, and how to fix each one.">
+<meta property="og:image" content="https://pregap.app/img/rename.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="990">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=13029a7f">
+</head>
+<body>
+<nav class="nav">
+    <a class="brand" href="/">Pregap</a>
+    <div>
+        <a href="guides.html">Guides</a>
+        <a href="help.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:support@pregap.app">Contact</a>
+    </div>
+</nav>
+<div class="wrap">
+
+<header>
+    <a href="/"><img src="img/icon-352.png" alt="Pregap"></a>
+    <h1>Why your burned CD has gaps between tracks</h1>
+    <p class="tagline">The four usual causes, and how to fix each</p>
+</header>
+
+<p>You burned a live album or a mix, and every track change now has a pause that
+wasn't in the original. There are four usual causes. The first two are down to how
+the disc was burned, and are the most common.</p>
+
+<h2>1. The disc was burned track-at-once</h2>
+<p>Track-at-once writes each track separately, and the drive has to leave a gap,
+traditionally two seconds, between them. It is the default in a lot of burning
+software.</p>
+<p><strong>How to tell:</strong> every track change has roughly the same pause, around
+two seconds.</p>
+<p><strong>Fix:</strong> burn disc-at-once, which writes the whole disc in one pass and
+lets gaps be zero. Pregap always burns disc-at-once.</p>
+
+<h2>2. The gap setting wasn't zero</h2>
+<p>Even when burning disc-at-once, most burning software adds a two-second gap between
+tracks unless you change it, because that is the traditional spacing for albums
+whose tracks are separate songs.</p>
+<p><strong>How to tell:</strong> the same evenly sized pause at every change, even though
+the software says it burns disc-at-once.</p>
+<p><strong>Fix:</strong> set the gap between tracks to zero before burning. Pregap
+defaults to zero, and lets you give individual tracks a gap if an album wants one.</p>
+
+<h2>3. The files carry their own silence</h2>
+<p>MP3 and AAC encoders add a little padding to the start and end of every file.
+Well-made files record exactly how much, so it can be trimmed away. Files from older
+or careless encoders don't, and the padding comes through as a short click or pause.
+Separately, some downloads and rips have real silence at the start or end of each
+track.</p>
+<p><strong>How to tell:</strong> a very short gap or click, often not the same length at
+every change, even on a disc burned with zero gaps.</p>
+<p><strong>Fix:</strong> burn from lossless files (FLAC, ALAC, WAV or AIFF) cut from a
+continuous source. If the files themselves have silence at the ends, trim it in an
+audio editor first.</p>
+
+<h2>4. The player pauses at track changes</h2>
+<p>Some players stop briefly at every track change, however the disc was burned. This
+is common in computer drives, older car stereos and some portable players.</p>
+<p><strong>How to tell:</strong> the same disc plays straight through on another player,
+such as a hi-fi CD player or a CDJ.</p>
+<p><strong>Fix:</strong> nothing on the disc will help, because the disc is already
+right. If it only happens in one car, check its settings for a gapless or
+continuous-play option.</p>
+
+<h2>Burning it right the first time</h2>
+<p>In short: lossless files, disc-at-once, zero gaps. The
+<a href="gapless-audio-cd-mac.html">gapless CD guide</a> covers the steps.</p>
+
+<h2>More guides</h2>
+<ul>
+    <li><a href="gapless-audio-cd-mac.html">How to burn a gapless audio CD on a Mac</a></li>
+    <li><a href="cds-for-cdjs.html">Burning CDs for CDJs</a></li>
+</ul>
+
+<footer>
+    <a href="/">Pregap</a>
+    <a href="guides.html">Guides</a>
+    <a href="help.html">Help</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <div style="margin-top:12px">© 2026 awfuldave</div>
+</footer>
+
+</div>
+</body>
+</html>

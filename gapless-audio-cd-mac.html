@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to burn a gapless audio CD on a Mac</title>
+<meta name="description" content="Burn mixes, live albums and continuous records to audio CD on a Mac with no silence between tracks: disc-at-once, zero pregaps, and the right source files.">
+<link rel="canonical" href="https://pregap.app/gapless-audio-cd-mac.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pregap">
+<meta property="og:url" content="https://pregap.app/gapless-audio-cd-mac.html">
+<meta property="og:title" content="How to burn a gapless audio CD on a Mac">
+<meta property="og:description" content="Burn mixes, live albums and continuous records to audio CD on a Mac with no silence between tracks: disc-at-once, zero pregaps, and the right source files.">
+<meta property="og:image" content="https://pregap.app/img/rename.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="990">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=13029a7f">
+</head>
+<body>
+<nav class="nav">
+    <a class="brand" href="/">Pregap</a>
+    <div>
+        <a href="guides.html">Guides</a>
+        <a href="help.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:support@pregap.app">Contact</a>
+    </div>
+</nav>
+<div class="wrap">
+
+<header>
+    <a href="/"><img src="img/icon-352.png" alt="Pregap"></a>
+    <h1>How to burn a gapless audio CD on a Mac</h1>
+    <p class="tagline">No silence where the music doesn't have any</p>
+</header>
+
+<p>A DJ mix, a live album or a record like <em>Dark Side of the Moon</em> is meant to
+play straight through. Burn it the usual way and you often get two seconds of
+silence at every track change. Getting rid of it takes two things: burning the disc
+in the right mode, and setting every gap to zero.</p>
+
+<h2>Where the silence comes from</h2>
+<p>Every track on an audio CD can have a <strong>pregap</strong>: a stretch before the
+track's real start that a player counts down through as negative time. The CD
+standard fixes the first track's pregap at two seconds or more. Every other pregap
+is up to whoever burns the disc, and can be zero.</p>
+<p>How much control you get depends on the burning mode:</p>
+<ul>
+    <li><strong>Track-at-once</strong> writes each track separately, stopping the laser
+        in between. The drive has to leave a gap, traditionally two seconds, so
+        continuous audio gets broken up.</li>
+    <li><strong>Disc-at-once</strong> writes the whole disc in one pass, laying out every
+        pregap in advance. Zero means zero: the last sample of one track sits right
+        next to the first sample of the next.</li>
+</ul>
+<p>So a gapless CD needs disc-at-once, with every pregap after the first set to zero.
+Nearly every USB burner made in the last twenty years can write disc-at-once.</p>
+
+<h2>Step by step in Pregap</h2>
+<ol>
+    <li><strong>Add the tracks in order.</strong> Drag the album folder or a playlist onto
+        the window, or use <strong>File ▸ Import Files</strong>. Drag rows to reorder.</li>
+    <li><strong>Check the gaps.</strong> Pregap always burns disc-at-once and sets every gap
+        to zero by default, so there is usually nothing to do. If you have changed the
+        default, set it back to zero, or set only the tracks that should run on.</li>
+    <li><strong>Fill in CD-Text</strong> if you want track names on players that show them.
+        This doesn't affect the gaps.</li>
+    <li><strong>Insert a blank CD-R</strong> and check the disc bar: the running time has
+        to fit the disc, about 80 minutes on standard media.</li>
+    <li><strong>Burn.</strong> Preflight checks the drive, the disc and every file before
+        anything is written.</li>
+</ol>
+<p class="meta">The two seconds before track 1 are required by the standard and stay.
+They come before the music starts, so you never hear them as a gap.</p>
+
+<h2>Start from the right files</h2>
+<p>Disc-at-once can only be as gapless as the audio you give it:</p>
+<ul>
+    <li><strong>Lossless is safest.</strong> FLAC, ALAC, WAV and AIFF hold exactly the
+        samples they were made from, so tracks cut from one continuous recording join up
+        perfectly.</li>
+    <li><strong>MP3 and AAC can add their own silence.</strong> Lossy encoders pad the start
+        and end of every file. Well-made files record how much padding there is, so it
+        can be trimmed away, but files from older or careless encoders don't, and the
+        padding can be heard as a tiny click or pause. For a continuous mix, burn from
+        lossless files if you have them.</li>
+    <li><strong>Silence baked into the file stays.</strong> If a track fades out or has
+        silence at its start, no burner will remove it. That is the recording, not a
+        gap.</li>
+</ul>
+
+<h2>Check the finished disc</h2>
+<p>Play the track changes on the player you care about. If you still hear a gap on a
+disc burned disc-at-once with zero gaps, the player may be the cause: some computers
+and older car stereos briefly mute at every track change. See
+<a href="gaps-between-tracks.html">Why your burned CD has gaps between tracks</a>.</p>
+
+<h2>More guides</h2>
+<ul>
+    <li><a href="cds-for-cdjs.html">Burning CDs for CDJs</a></li>
+    <li><a href="gaps-between-tracks.html">Why your burned CD has gaps between tracks</a></li>
+</ul>
+
+<footer>
+    <a href="/">Pregap</a>
+    <a href="guides.html">Guides</a>
+    <a href="help.html">Help</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <div style="margin-top:12px">© 2026 awfuldave</div>
+</footer>
+
+</div>
+</body>
+</html>
