@@ -51,6 +51,12 @@ footer {
 }
 footer a { margin-right: 18px; }
 
+/* Screenshots in the guides. Narrow ones are inspector panels, shown near their 2x size. */
+.guide-shot { margin: 28px 0 32px; }
+.guide-shot img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); background: #1e1e1e; }
+.guide-shot.narrow img { max-width: 320px; }
+.guide-shot figcaption { color: var(--muted); font-size: 14px; margin-top: 10px; }
+
 /* Menu: one line, on every page. */
 .nav {
     max-width: 680px; margin: 0 auto; padding: 22px 0;

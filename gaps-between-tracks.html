@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=13029a7f">
+<link rel="stylesheet" href="style.css?v=05290b67">
 </head>
 <body>
 <nav class="nav">
@@ -48,7 +48,15 @@ software.</p>
 <p><strong>How to tell:</strong> every track change has roughly the same pause, around
 two seconds.</p>
 <p><strong>Fix:</strong> burn disc-at-once, which writes the whole disc in one pass and
-lets gaps be zero. Pregap always burns disc-at-once.</p>
+lets gaps be zero. Pregap always burns disc-at-once, and says so in the disc layout
+bar.</p>
+
+<figure class="guide-shot">
+    <img src="img/guide-layout.jpg" width="1146" height="155" loading="lazy"
+         alt="The end of the disc layout bar, labelled Disc-at-once, 2s pregap, no song gaps, with 38:54 remaining of 79:58.">
+    <figcaption>The disc layout bar shows the time left on the disc and how it will be burned.</figcaption>
+</figure>
+
 
 <h2>2. The gap setting wasn't zero</h2>
 <p>Even when burning disc-at-once, most burning software adds a two-second gap between
@@ -56,8 +64,15 @@ tracks unless you change it, because that is the traditional spacing for albums
 whose tracks are separate songs.</p>
 <p><strong>How to tell:</strong> the same evenly sized pause at every change, even though
 the software says it burns disc-at-once.</p>
-<p><strong>Fix:</strong> set the gap between tracks to zero before burning. Pregap
-defaults to zero, and lets you give individual tracks a gap if an album wants one.</p>
+<p><strong>Fix:</strong> set the gap between tracks to zero before burning. In Pregap
+that is the <strong>Gap Between Tracks</strong> slider, which starts at None.</p>
+
+<figure class="guide-shot narrow">
+    <img src="img/guide-gaps.jpg" width="516" height="335" loading="lazy"
+         alt="Pregap's gap controls: the Pregap slider at 2 seconds, and the Gap Between Tracks slider at None.">
+    <figcaption><strong>Pregap</strong> sets the run-up before track 1. <strong>Gap Between Tracks</strong> at None means no silence between any tracks.</figcaption>
+</figure>
+
 
 <h2>3. The files carry their own silence</h2>
 <p>MP3 and AAC encoders add a little padding to the start and end of every file.

@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=13029a7f">
+<link rel="stylesheet" href="style.css?v=05290b67">
 </head>
 <body>
 <nav class="nav">
@@ -63,9 +63,9 @@ Nearly every USB burner made in the last twenty years can write disc-at-once.</p
 <ol>
     <li><strong>Add the tracks in order.</strong> Drag the album folder or a playlist onto
         the window, or use <strong>File ▸ Import Files</strong>. Drag rows to reorder.</li>
-    <li><strong>Check the gaps.</strong> Pregap always burns disc-at-once and sets every gap
-        to zero by default, so there is usually nothing to do. If you have changed the
-        default, set it back to zero, or set only the tracks that should run on.</li>
+    <li><strong>Check the gaps.</strong> Pregap always burns disc-at-once, and the
+        <strong>Gap Between Tracks</strong> slider starts at None, so there is usually
+        nothing to do. If you have moved it, slide it back to None.</li>
     <li><strong>Fill in CD-Text</strong> if you want track names on players that show them.
         This doesn't affect the gaps.</li>
     <li><strong>Insert a blank CD-R</strong> and check the disc bar: the running time has
@@ -73,8 +73,21 @@ Nearly every USB burner made in the last twenty years can write disc-at-once.</p
     <li><strong>Burn.</strong> Preflight checks the drive, the disc and every file before
         anything is written.</li>
 </ol>
-<p class="meta">The two seconds before track 1 are required by the standard and stay.
-They come before the music starts, so you never hear them as a gap.</p>
+<p class="meta">The <strong>Pregap</strong> slider is the run-up before track 1, two seconds
+by default as the standard expects. It comes before the music starts, so you never
+hear it as a gap.</p>
+
+<figure class="guide-shot narrow">
+    <img src="img/guide-gaps.jpg" width="516" height="335" loading="lazy"
+         alt="Pregap's gap controls: the Pregap slider at 2 seconds, and the Gap Between Tracks slider at None.">
+    <figcaption><strong>Pregap</strong> sets the run-up before track 1. <strong>Gap Between Tracks</strong> at None means no silence between any tracks.</figcaption>
+</figure>
+
+<figure class="guide-shot">
+    <img src="img/guide-layout.jpg" width="1146" height="155" loading="lazy"
+         alt="The end of the disc layout bar, labelled Disc-at-once, 2s pregap, no song gaps, with 38:54 remaining of 79:58.">
+    <figcaption>The disc layout bar shows the time left on the disc and how it will be burned.</figcaption>
+</figure>
 
 <h2>Start from the right files</h2>
 <p>Disc-at-once can only be as gapless as the audio you give it:</p>
