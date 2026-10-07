@@ -86,8 +86,12 @@ body.home { padding-bottom: 64px; }
 .shot { margin: 0 0 56px; }
 .points + .shot { margin: 64px 0 0; }
 .shot img { display: block; width: 100%; height: auto; border-radius: 14px; background: #111114; }
-.soon { margin: 72px 0 0; font-size: 15px; }
-.soon::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-right: 10px; vertical-align: 1px; }
+.get { margin: 72px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+.get span { color: var(--muted); font-size: 15px; }
+.hero-get { margin-top: 32px; }
+.store { display: inline-block; background: var(--accent); color: #101013; font-weight: 600; font-size: 16px;
+         text-decoration: none; padding: 12px 20px; border-radius: 10px; }
+.store:hover { filter: brightness(1.08); }
 .home footer { display: flex; flex-wrap: wrap; gap: 8px 22px; }
 .home footer a { margin: 0; color: var(--text); text-decoration: none; }
 .home footer a:hover { color: var(--accent); }
