@@ -1,17 +1,18 @@
-/* Pregap site: dark, neutral, one accent (burn amber), per BRANDING.md. */
+/* Pregap site: dark, neutral, one accent (macOS orange, as in the screenshots), per BRANDING.md. */
 :root {
     --bg: #101013;
     --panel: #17171c;
     --line: #26262e;
     --text: #e8e8ec;
     --muted: #9a9aa6;
-    --accent: #e0a24a;
+    --accent: #f7821b;
+    --store: #f7821b;   /* button fill: the true orange in both themes */
     --radius: 12px;
 }
 @media (prefers-color-scheme: light) {
     :root {
         --bg: #f7f7f8; --panel: #fff; --line: #e3e3e7;
-        --text: #16161a; --muted: #62626e; --accent: #a9701d;
+        --text: #16161a; --muted: #62626e; --accent: #b04f00;   /* darker so link text stays readable */
     }
 }
 * { box-sizing: border-box; }
@@ -89,7 +90,7 @@ body.home { padding-bottom: 64px; }
 .get { margin: 72px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
 .get span { color: var(--muted); font-size: 15px; }
 .hero-get { margin-top: 32px; }
-.store { display: inline-block; background: var(--accent); color: #101013; font-weight: 600; font-size: 16px;
+.store { display: inline-block; background: var(--store); color: #101013; font-weight: 600; font-size: 16px;
          text-decoration: none; padding: 12px 20px; border-radius: 10px; }
 .store:hover { filter: brightness(1.08); }
 .home footer { display: flex; flex-wrap: wrap; gap: 8px 22px; }
