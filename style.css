@@ -104,3 +104,9 @@ body.home { padding-bottom: 64px; }
     .points { grid-template-columns: 1fr; gap: 22px; }
     .nav div { gap: 6px 16px; flex-wrap: wrap; }
 }
+
+/* Compatibility tables in the guides. */
+.compat { width: 100%; border-collapse: collapse; margin: 16px 0 20px; font-size: 15px; }
+.compat th, .compat td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.compat th { color: var(--muted); font-weight: 600; font-size: 13px; }
+@media (max-width: 640px) { .compat th, .compat td { padding: 8px 6px; font-size: 14px; } }
